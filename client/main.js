@@ -18,8 +18,19 @@ Template.links.helpers({
 
 Template.links.events({
   'click .candybox-lid':function(event){
-    $('.candybox-lid').animate({top:'-1000px'})
+    $('.candybox-lid').addClass('open');
+    $('.candybox-lid').animate({top:'-600px', left:'600px'})
     $('.candy').animate({opacity:1}, 600);
+  },
+  'click .candybox-lid.open':function(event){
+    $('.candybox-lid').removeClass('open');
+    $('.candybox-lid').animate({top:'0px', left:'15px'})
+    $('.candy').animate({opacity:0}, 600);
+    setTimeout(function(){
+      for (i = 0; i <= 11; i++){
+        $(".c"+i).removeClass('thumb').attr('src',Candybar.find().fetch()[i].candy);
+      }
+    },1000);
   },
   'click #pictures':function(event){
     $('#pictures').modal('hide');

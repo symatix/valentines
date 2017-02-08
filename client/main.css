@@ -15,7 +15,7 @@ body{
 .candybox-lid{
 	position:absolute;
 	z-index:10;
-	margin: 10px 10px;
+	margin: 10px 5px;
 	width:1000px;
 	height: 800px;
 
@@ -50,16 +50,20 @@ body{
 	top:-1000px;
 	opacity:0.7;
 }
+.c0{
+	top:260px;
+	left:270px;
+}
 .c1{
 	top:85px;
 	left:240px;
 }
 .c2{
-	top:230px;
-	left:120px;
+	top:200px;
+	left:100px;
 }
 .c3{
-	top:170px;
+	top:150px;
 	left:410px;
 }
 .c4{
@@ -67,8 +71,8 @@ body{
 	left:130px;
 }
 .c5{
-	top:270px;
-	left:280px;
+	top:480px;
+	left:635px;
 }
 .c6{
 	top:344px;
@@ -91,11 +95,7 @@ body{
 	left:310px;
 }
 .c11{
-	top:480px;
-	left:635px;
-}
-.c12{
-	top:410px;
+	top:400px;
 	left:820px;
 }
 
@@ -145,4 +145,13 @@ body{
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
+}
+
+/* rotate lid */
+.open img{
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  animation-name: tilt;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
 }
