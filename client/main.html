@@ -1,87 +1,28 @@
-
-
 <body>
 {{> links}}
 </body>
 
 <template name="links">
-
+<!-- modal -->
 <div id="pictures" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
-    <!-- Modal content-->
         <img class="picture" id="p1" src="">
     </div>
+</div> <!-- /modal -->
 
-</div>
+<!-- body -->
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
       <img class="candybox" src="candybox.png">
-      <img class="candy" id="c1" src="1.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c2" src="2.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c3" src="3.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c4" src="4.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c5" src="5.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c6" src="6.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c7" src="7.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c8" src="8.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c9" src="9.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c10" src="10.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c11" src="11.png" data-toggle="modal" data-target="#pictures">
-      <img class="candy" id="c12" src="12.png" data-toggle="modal" data-target="#pictures">
+      {{#each candybar}}
+      <img class="candy {{candyId}}" id="{{_id}}" src="{{candy}}" data-toggle="modal" data-target="#pictures">
+      <audio id="{{audioId}}" preload="auto">
+        <source src="{{audio}}">
+      </audio>
+      {{/each}}
       <img class="candybox-lid" src="candybox-lid-sig.png">
     </div>
   </div>
-</div>
-
-<audio id="clip1" preload="auto">
-  <source src="audio/a1.mp3">
-</audio>
-
-<audio id="clip2" preload="auto">
-  <source src="audio/a2.mp3">
-</audio>
-
-<audio id="clip3" preload="auto">
-  <source src="audio/a3.mp3">
-</audio>
-
-<audio id="clip4" preload="auto">
-  <source src="audio/a4.mp3">
-</audio>
-
-<audio id="clip5" preload="auto">
-  <source src="audio/a5.mp3">
-</audio>
-
-<audio id="clip6" preload="auto">
-  <source src="audio/a6.mp3">
-</audio>
-
-<audio id="clip7" preload="auto">
-  <source src="audio/a7.mp3">
-</audio>
-
-<audio id="clip8" preload="auto">
-  <source src="audio/a8.mp3">
-</audio>
-
-<audio id="clip9" preload="auto">
-  <source src="audio/a9.mp3">
-</audio>
-
-<audio id="clip10" preload="auto">
-  <source src="audio/a10.mp3">
-</audio>
-
-<audio id="clip11" preload="auto">
-  <source src="audio/a11.mp3">
-</audio>
-
-<audio id="clip12" preload="auto">
-  <source src="audio/a12.mp3">
-</audio>
-
-
+</div><!-- body -->
 </template>
