@@ -11,6 +11,7 @@ Template.links.rendered = function () {
 Template.links.events({
   'click .candybox-lid':function(event){
     $('.candybox-lid').animate({top:'-1000px'})
+    $('.candy').animate({opacity:1}, 150);
   },
   'click #c1':function(event) {
   	$(".picture").attr('src','imgs/1.jpg');
