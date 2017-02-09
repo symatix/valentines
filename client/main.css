@@ -29,13 +29,13 @@ body{
 	position:absolute;
 	z-index:2;
 	width:145px;
-}
+}/*
 .candy:hover{
 	opacity:0.6 !mportant;
 }
 .candy:active{
 	opacity:0.2;
-}
+}*/
 .picture{
 	width:500px;
 	height:500px;
@@ -44,7 +44,7 @@ body{
 }
 .thumb{
 	border-radius:73px;
-	box-shadow:0 0 15px #ffffff;
+	box-shadow:0 0 15px #800000;
 }
 .col-xs-12{
 	top:-1000px;
