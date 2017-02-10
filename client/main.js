@@ -32,8 +32,8 @@ Template.links.events({
   'click .candybox-lid':function(event){
     $('.candybox-lid').addClass('open');
     $('.candybox-lid').animate({
-      top:'-600px', 
-      left:'600px',
+      top:'-400px', 
+      left:'-1000px',
       })
     $('.candy').animate({
       opacity:1

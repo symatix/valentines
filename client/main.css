@@ -47,7 +47,10 @@ body{
 .ytplayer{
 	position:absolute;
 	right:25px;
-	top:25px;
+	bottom:15px;
+}
+.ytplayer:hover{
+	opacity:0.6;
 }
 .col-xs-12{
 	top:-1000px;
