@@ -29,13 +29,11 @@ body{
 	position:absolute;
 	z-index:2;
 	width:145px;
-}/*
-.candy:hover{
-	opacity:0.6 !mportant;
 }
-.candy:active{
-	opacity:0.2;
-}*/
+.candle{
+	width:100px;
+	height:auto;
+}
 .picture{
 	width:500px;
 	height:500px;
@@ -45,6 +43,11 @@ body{
 .thumb{
 	border-radius:73px;
 	box-shadow:0 0 15px #800000;
+}
+.ytplayer{
+	position:absolute;
+	right:25px;
+	top:25px;
 }
 .col-xs-12{
 	top:-1000px;
@@ -98,7 +101,21 @@ body{
 	top:400px;
 	left:820px;
 }
-
+.candle{
+	position:absolute;
+}
+.candle1{
+	top:500px;
+	left:850px;
+}
+.candle2{
+	top:300px;
+	left:-130px;
+}
+.candle3{
+	top:-90px;
+	left:750px;
+}
 .modal {
   text-align: center;
   padding: 0!important;

@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
   // code to run on server at startup
+
   if (Candybar.find().count() == 0){
         for (var i = 0 ; i <= 11 ; i++ ){
         Candybar.insert(

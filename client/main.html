@@ -1,5 +1,6 @@
 <body>
 {{> links}}
+{{> player}}
 </body>
 
 <template name="links">
@@ -22,7 +23,20 @@
       </audio>
       {{/each}}
       <img class="candybox-lid" src="candybox-lid-sig.png">
+      <img class="candle candle1" src="candle.png">
+      <img class="candle candle2" src="candle.png">
+      <img class="candle candle3" src="candle.png">
     </div>
   </div>
 </div><!-- body -->
+</template>
+
+
+<template name="player">
+  <!-- yt player -->
+  <div class="ytplayer" data-video="ljQsRLN2dXA"  
+         data-autoplay="1"         
+         data-loop="0"             
+         id="youtube-audio">
+  </div>
 </template>

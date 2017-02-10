@@ -6,12 +6,17 @@ import './main.html';
 Meteor.subscribe("theCandybar");
 Meteor.subscribe("theCandybox");
 
-
+Template.player.onRendered(function(){
+  $('head').append('<script src="https://www.youtube.com/iframe_api"></script><script src="/ytplayer.js"></script>');
+});
+  
 Template.links.rendered = function () {
   $('.col-xs-12').animate({
     opacity:1, 
     top:"0px"
   }, 1000);
+
+
 };
 
 Template.links.helpers({
