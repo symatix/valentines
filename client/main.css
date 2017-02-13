@@ -45,7 +45,8 @@ body{
 	box-shadow:0 0 15px #800000;
 }
 .ytplayer{
-	position:absolute;
+	position:fixed;
+	z-index:100;
 	right:25px;
 	bottom:15px;
 }
@@ -112,8 +113,8 @@ body{
 	left:850px;
 }
 .candle2{
-	top:300px;
-	left:-130px;
+	top:240px;
+	left:-80px;
 }
 .candle3{
 	top:-90px;
